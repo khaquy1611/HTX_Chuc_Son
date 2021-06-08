@@ -1,0 +1,785 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+* , *::after , *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif!important;
+    border: none;
+}
+ /* Header CSS Start */
+html {
+    font-size:62.5%;
+    height:auto;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+  
+ 
+}
+.navbar-brand {
+    width: 20%;
+}
+.collapse  {
+    width: 500px!important;;
+}
+.wrapper  .header {
+    width: 100%;
+    background-color: #fff;
+    padding:1rem 0;
+    transition: all ease 0.5s;
+}
+.header.sticky {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display:flex;
+    justify-content:space-between;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+    color: #48A682!important;
+}
+.nav-item .nav-link{
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-style: normal;
+    color:#8B8B8B;
+    text-transform: capitalize;
+}
+.nav-item .nav-link:hover {
+    color:#48A682!important;
+}
+.nav-item:first-child {
+    margin-left:0!important;
+}
+.nav-item {
+    text-align: center;
+    margin: 0 4rem;
+}
+.shopping-cart {
+    background-color: #fff!important;
+    outline:none!important;
+    border: .2rem solid #B7B3B3;
+    padding:.4rem 3rem;
+    border-radius: 50px;
+    color: #48A682;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.shopping-cart:hover {
+    background-color: #48A682!important;
+    border: .2rem solid #B7B3B3;
+    color:#fff;
+    
+}
+.navbar-nav {
+    margin:0 auto;
+}
+/* Header CSS End */
+/* Main start */
+main {
+    width: 100%;
+    margin-top: 2rem;
+}
+.story__border {
+    width: 108px;
+    height:10px;
+    background: #C4C4C4;
+}
+.main  .main__story > span {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+color: #8B8B8B;
+display: inline-block;
+margin: 1rem 0 1rem 0;
+}
+.product__item {
+    text-align: center;
+    margin:4rem 0;
+}
+.product__item .product__text h1 {
+    
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 3.5rem;
+/* identical to box height */
+margin:2rem 0;
+text-align: center;
+
+color: #000000;
+}
+.product__text p {
+font-style: normal;
+font-weight: 600;
+font-size: 2rem;
+text-align: center;
+
+color: #000000;
+
+opacity: 0.5
+}
+.product__text span  , .product__text span  s{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #065B32;
+    
+}
+#pagination-demo1{
+    width: 30%!important;
+    margin: 0 auto!important;
+}
+#paging{
+   width: 50%;
+   margin:0 auto;
+}
+.paginationjs .paginationjs-pages li > a , .paginationjs .paginationjs-pages li.active > a , .paginationjs .paginationjs-pages li:first-child > a , .paginationjs .paginationjs-pages li:last-child > a {
+    width: 64px;
+    height: 64px;
+    line-height:64px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: 1rem;
+    transition:all .4s;
+}
+.paginationjs .paginationjs-pages li.active > a {
+    background: #48A682;
+}
+.paginationjs .paginationjs-pages li > a:hover {
+    background: #48A682;
+    color: #fff;
+}
+.paginationjs .paginationjs-pages li  {
+    border-radius: none!important;
+    border: none!important;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+/* identical to box height */
+
+text-align: center;
+
+color: #FFFFFF;
+}
+/* #paging {
+    width: 20%;
+    margin: 0 auto;
+} */
+.pagination  > ul {
+    list-style: none;
+    justify-content:space-around;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.pagination  > ul li {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    transition:.4s ease-in; 
+    line-height:40px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #000;
+}
+.pagination  > ul  li.active{
+   
+    background: rgb(72, 166, 130);
+
+}
+.pagination  > ul  li.numb:hover , .pagination  > ul  li:first-child:hover , .pagination  > ul  li:last-child:hover{
+    background: rgb(72, 166, 130);
+    line-height:40px;
+    box-sizing: border-box;
+    color: #fff;
+    border-radius: 50px;
+}
+.pagination  > ul li.dots {
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 2rem;
+/* identical to box height */
+
+text-align: center;
+
+color: #000000;
+}
+.product__item > p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+    
+    color: #000000;
+    
+    opacity: 0.5;
+}
+.product__item > span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #065B32;
+}
+.product__image {
+    width: 100%;
+}
+.product__image img {
+    width: 100%;
+}
+/* Main End */
+/* footer  CSS Start */
+.footer {
+    width: 100%!important;
+}
+
+.footer__details h1 {
+font-style: normal;
+font-weight: 600;
+font-size: 36px;
+/* identical to box height */
+margin: 2em 0;
+color: #48A682;
+}
+.footer__details {
+    width: 80%;
+    margin:0 auto;
+}
+.footer__item h6 {
+font-style: normal;
+font-weight: 600;
+font-size: 2rem;
+/* identical to box height */
+
+
+/* final :D */
+
+color: #48A682;
+}
+.footer__bottom {
+    display:table;
+}
+.footer__item {
+    display:table-cell;
+    width: 28%;
+}
+
+.footer__item:nth-child(3), .footer__item:nth-child(2) {
+    width: 16%;
+    margin-left: 2rem;
+}
+.footer__item__details span {
+font-style: normal;
+font-weight: 600;
+font-size: 2rem;
+color: #8B8B8B;
+width: 70%;
+display:inline-block;
+margin-left: 2rem;
+}
+.footer__item__details {
+    margin-top: 2rem;
+}
+.footer__item  > p {
+font-style: normal;
+font-weight: 600;
+margin:2rem 0;
+font-size: 22px;
+/* identical to box height */
+
+
+color: #8B8B8B;
+
+}
+.footer__item:last-child .form-group {
+    position: relative;
+}
+.footer__item:last-child .form-group .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width :117px;
+    height :67px;
+    background: #48A682;
+    border-radius: 0px 10px 10px 0px;
+    color: #fff;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+
+}
+.footer__item:last-child .form-group input{
+    outline:none!important;
+    border: none!important;
+    width:100%;
+    border: 1.5px solid #B7B3B3!important;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height:67px;
+}
+.footer__item:last-child .form-group input:focus {
+    text-indent: 2rem;
+}
+::placeholder {
+    text-indent: 2rem;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: normal;
+
+/* a */
+
+color: #8B8B8B;
+}
+.footer__social {
+    margin-top: 2rem;
+}
+
+.footer__social .social {
+    width: 20%;
+    margin-left: 1rem;
+}
+.footer__social .social img {
+    width: 100%;
+}
+.copy__right {
+    width: 100%!important;
+    background: #F1F1F1!important;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+    color: #8B8B8B;
+}
+
+
+#topBtn {
+    text-align: center;
+    line-height:50px;
+    position: fixed;
+    right:20px;
+    bottom: 0;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: red;
+    color: #fff!important;
+    font-size: 2rem;
+}
+.footer__top {
+    margin: 4rem 0;
+}
+.footer__details h1 {
+    margin: 2rem 0 2rem 4rem;
+    color: #48A682;
+}
+/* footer  CSS End */
+@media only screen  and (max-width : 750px){
+    #paging {
+        width: 100%;
+    }
+    .paginationjs .paginationjs-pages li > a, .paginationjs .paginationjs-pages li.active > a, .paginationjs .paginationjs-pages li:first-child > a, .paginationjs .paginationjs-pages li:last-child > a {
+        width: 20%;
+        height: 20%;
+        line-height:50px;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar-brand {
+        width: 50%;
+    }
+    .footer__bottom {
+        display:flex!important;
+        flex-direction: column;
+    } 
+    .footer__item:last-child .form-group .btn {
+        left:80%;
+    }
+    .footer__social {
+        margin:4rem 0;
+    }
+    .footer__social .social {
+        margin-top: 2rem;
+    }
+}
+@media only screen and (max-width: 466px) {
+    .footer__item:last-child .form-group .btn {
+        left:70%!important;
+    }
+    .footer__item:last-child .form-group .btn {
+        width: 30%!important;
+    }
+}
+@media only screen and (max-width: 46rem) {
+    /* .Header CSS START */
+    .navbar-collapse {
+        width: 80%;
+        background-color: #fff;
+        box-shadow: 5px 7px 15px #928989;
+        margin-top: 2rem;
+        border-radius: 1rem;
+        text-align: center;
+        padding:2rem 0;
+    }
+    .navbar-brand  {
+        width: 50%;
+        font-size:1.2rem;
+    }
+    .nav-link {
+        width: 100%;
+        font-weight: normal;
+      
+    }
+    .shopping-cart {
+        font-size: 1rem!important;
+    }
+    .nav-item {
+        padding:1rem 0;
+        width: 100%!important;
+        margin: 0!important;;
+    }
+    .nav-item:hover {
+        background-color: rgba(0,0,0 ,.1);
+    }
+    .shopping-cart {
+        margin-top: 1rem;
+    }
+    .navbar-nav .nav-link {
+        width: 100%!important;
+    }
+      /* .Header CSS END */
+        /* footer css Start */
+    .footer__bottom {
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+    .footer__item  {
+        width: 100%;
+        margin: 2rem 0;
+    }
+    .footer__item:last-child .form-group input {
+        width:100%;
+    }
+    .footer__social {
+        display:none;
+    }
+    .copy__right {
+        font-size: 1rem;
+    }
+    .footer__img {
+        text-align: center;
+    }
+    /* footer css end */
+    #topBtn {
+        right: 20%;
+        z-index: 2000;
+    }
+    .pagination > ul li:first-child , .pagination > ul li:last-child , .pagination > ul li.numb {
+        width: 10%;
+    }
+    .pagination > ul li.dots {
+        font-size: 1rem;
+    }
+    #paging {
+        width: 100%;
+    }
+    .footer__item:last-child .form-group .btn {
+        left: 70%!important;
+    }
+    .paginationjs .paginationjs-pages li > a, .paginationjs .paginationjs-pages li.active > a, .paginationjs .paginationjs-pages li:first-child > a, .paginationjs .paginationjs-pages li:last-child > a {
+        width: 8%;
+        height:8%;
+    }
+}
+@media only screen and (max-width:375px) {
+   
+    /* footer css Start */
+    .footer__bottom {
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+    .footer__item  {
+        width: 100%;
+        margin: 2rem 0;
+    }
+    .footer__item:last-child .form-group input {
+        width:100%;
+    }
+    .footer__social {
+        display:none;
+    }
+    .footer__item:last-child .form-group .btn {
+        left:60%;
+    }
+    /* footer css END */
+}
+@media only screen and (min-width:768px) and (max-width:1024px)  {
+    /* .Header CSS START */
+	.header .navbar{
+        display:flex;
+        flex-direction: column!important;
+    }
+    .nav-item {
+        margin:  2rem;
+    }
+    .navbar-collapse {
+        flex-direction:column;
+    }
+    /* .Header CSS END */
+     /* footer css Start */
+     .footer__bottom {
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+    .footer__item  {
+        width: 100%;
+        margin: 2rem 0;
+    }
+    .footer__item:last-child .form-group input {
+        width:100%;
+    }
+    .footer__social {
+        display:none;
+    }
+    .footer__top {
+        margin: 4rem 0;
+    }
+    .footer__details h1 {
+        margin: 2rem 0 2rem 4rem;
+        color: #48A682;
+    }
+    /* footer css end */
+    .pagination > ul li:first-child , .pagination > ul li:last-child , .pagination > ul li.numb {
+        width: 10%;
+    }
+    .pagination > ul li.dots {
+        font-size: 1rem;
+    }
+    #paging {
+        width: 80%;
+        margin:0 auto;
+    }
+}
+@media only screen  and (max-width : 1400px) {
+      /* footer start */
+      .footer__item > p {
+        font-size: 1.5rem;
+    }
+    .footer__item__details span {
+        font-size: 1.5rem;
+    }
+    /* footer end */
+}
+@media only screen  and (max-width : 1348px) {
+    /* footer start */
+   .footer__item > p {
+    font-size: 1.5rem;
+}
+.footer__item__details span {
+    font-size: 1.5rem;
+}
+/* footer end */
+}
+@media only screen  and (max-width : 1300px) {
+    .slider__tab {
+        top: 500px!important;
+    }
+}
+@media only screen  and (max-width : 1680px) {
+    .slider__tab {
+        top:690px;
+        left:10px;
+    }
+    .slider__tab__item {
+        width:20%;
+    }
+    .slider__tab {
+        width: 100%;
+    }
+}
+@media only screen  and (max-width : 1580px) {
+    .slider__tab {
+        top:650px;
+        left:10px;
+    }
+    .slider__tab__item {
+        width:20%;
+    }
+    .slider__tab {
+        width: 100%;
+    }
+}
+@media only screen  and (max-width : 1498px) {
+    .slider__tab {
+        top:600px;
+        left:10px;
+        
+    }
+    .slider__tab__item span {
+        font-size: 1.5rem;
+    }
+    .slider__tab__item {
+        width:20%;
+    }
+    .slider__tab {
+        width: 100%;
+    }
+}
+@media only screen  and (max-width : 1180px) {
+    .slider__tab {
+        top: 480px!important;;
+        left:10px;
+        
+    }
+    .carousel-caption {
+        top: 40px!important;
+    }
+    .slider__tab__item span {
+        font-size: 1.5rem;
+    }
+    .slider__tab__item {
+        width:20%;
+    }
+    .slider__tab {
+        width: 100%;
+    }
+}
+@media only screen  and (max-width : 1150px) {
+    .slider__tab {
+        top: 440px!important;;
+        left:10px;
+        
+    }
+    .carousel-caption {
+        top: 40px!important;
+    }
+    .slider__tab__item span {
+        font-size: 1.4rem;
+    }
+    .slider__tab__item {
+        width:20%;
+    }
+    .slider__tab {
+        width: 100%;
+    }
+}
+@media only screen  and (max-width : 736px) {
+    .navbar-expand-sm {
+        flex-direction: column;
+    }
+    #navbarMenu{
+        width: 100%!important;
+        background-color: none !important;
+        border:none !important;
+        box-shadow: none!important;
+    }
+    .navbar-nav  {
+        width: 100%;
+    }
+    .story {
+        margin:46rem 0;
+    }
+}
+@media only screen  and (max-width : 576px) {
+    .navbar-expand-sm {
+        flex-direction: row;
+    }
+}
+@media only screen  and (max-width : 360px)  {
+    /* footer css Start */
+.footer__bottom {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.footer__item  {
+    width: 100%;
+    margin: 2rem 0;
+}
+.footer__item:last-child .form-group input {
+    width:100%;
+}
+.footer__social {
+    display:none;
+}
+/* footer css END */
+}
+@media only screen  and (max-width : 767px) {
+    .paginationjs .paginationjs-pages li > a, .paginationjs .paginationjs-pages li.active > a, .paginationjs .paginationjs-pages li:first-child > a, .paginationjs .paginationjs-pages li:last-child > a{
+        width: 20%;
+        height: 20%;
+    }
+    #paging {
+        width: 100%;
+    }
+    .footer__item h6 {
+        font-size:1.5rem;
+    }
+    .footer__social .social {
+        width: 16%;
+    }
+} 
+@media only screen  and (max-width : 736px) {
+    .footer__item:last-child .form-group .btn {
+        left:80%!important;
+    }
+} 
+@media only screen  and (max-width : 320px)  {
+    /* footer css Start */
+    .footer__bottom {
+        display:flex;
+        flex-direction: column;
+        justify-content:center;
+    }
+    .footer__item  {
+        width: 100%;
+        margin: 2rem 0;
+    }
+    .footer__item:last-child .form-group input {
+        width:100%;
+    }
+    .footer__social {
+        display:none;
+    }
+    /* footer css End */
+     .paginationjs .paginationjs-pages li:first-child , .paginationjs .paginationjs-pages li:last-child{
+        display:none;
+    }
+    .footer__item:last-child .form-group .btn {
+        left:50%;
+    }
+}
